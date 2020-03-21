@@ -111,10 +111,10 @@ function addMealToDOM(meal) {
 submit.addEventListener('submit', searchMeal);
 random.addEventListener('click', getRandomMeal);
 
-mealsEl.addEventListener('click', e => {
+mealsEl.addEventListener('touchstart', e => {
     const mealInfo = e.path.find(item => {
         if (item.classList) {
-            alert('click is firing for mobile ?')
+            
             return item.classList.contains('meal-info');
         } else {
             return false;
@@ -126,3 +126,4 @@ mealsEl.addEventListener('click', e => {
         getMealByID(mealID)
     }
 });
+
