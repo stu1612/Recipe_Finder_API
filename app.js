@@ -4,7 +4,8 @@ const search = document.getElementById('search'),
     mealsEl = document.getElementById('meals'),
     resultHeading = document.getElementById('result-heading'),
     single_mealEl = document.getElementById('single-meal'),
-    add_response = document.querySelector('.no-search-added');
+    add_response = document.querySelector('.no-search-added')
+    test = document.getElementById('test');
 
 // search meal and fetch from API
 function searchMeal(e) {
@@ -110,8 +111,11 @@ function addMealToDOM(meal) {
 // event listeners
 submit.addEventListener('submit', searchMeal);
 random.addEventListener('click', getRandomMeal);
+test.addEventListener('click', function() {
+    alert('test');
+})
 
-mealsEl.addEventListener('touchstart', e => {
+mealsEl.addEventListener('click', e => {
     const mealInfo = e.path.find(item => {
         if (item.classList) {
             

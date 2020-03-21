@@ -101,6 +101,13 @@ body {
   border-bottom-right-radius: 10px;
 }
 
+.container .flex .test-btn {
+  cursor: pointer;
+  margin-left: 20px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
 .meals {
   display: -ms-grid;
   display: grid;
