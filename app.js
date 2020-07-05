@@ -111,11 +111,6 @@ function addMealToDOM(meal) {
 // event listeners
 submit.addEventListener('submit', searchMeal);
 random.addEventListener('click', getRandomMeal);
-test.addEventListener('touchstart', f)
-
-function f(ev) {
-    alert('hello');
-}
 
 mealsEl.addEventListener('click', e => {
     const mealInfo = e.path.find(item => {
